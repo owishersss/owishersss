@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Surau At-Tarbiyyah</title>
+    <link rel="shortcut icon" href=".ico">
+    <link rel="stylesheet" href="../style/stylesheet.css" type="text/css">
+    <script src="../javascript/script.js"></script>
+
+<style>
+    .flip-card {
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px;
+  position:relative;
+  margin:4%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  z-index: 2;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  font-size:15px;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+.flip-card-front img{
+  text-align:center;
+  width:250px;
+  height:250px;
+}
+
+
+</style>
+
+  </head>
+
+  <body>
+
+
+<div class="topnav" id="myTopnav">
+  <span>Surau</span><span class="tarbiyyah">At-Tarbiyyah</span>
+</div>
+
+
+  <div id="mySidenav" class="sidenav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="activities.html">Surau Activities</a>
+    <a class="active" href="developers.html">Web Developers</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="chart.html">Organisational Chart</a>
+    <a href="location.html">Location</a>
+    <a href="prayertimes.html">Prayer times</a>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#10005;</a>
+
+  </div>
+  <div id="main">
+    <p style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="../images/sidebut.png"></p>
+  </div>
+
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="../images/personalpic.jpeg" alt="Avatar">
+      </div>
+      <div class="flip-card-back">
+        <h1>Md Owish bin Md Rizal</h1>
+        <p>1816401</p>
+        <p>owishaa@gmail</p>
+        <p>011-6214-2720</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="../images/Shams.jpg" alt="Avatar">
+      </div>
+      <div class="flip-card-back">
+        <h1>Shamsadin F. Dahir</h1>
+        <p>1731789</p>
+        <p>Shamsadin.Dahir@gmail.com</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="../images/aiman.jpg" alt="Avatar" style="margin-bottom:140px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Md Fitri Aiman</h1>
+        <p>1810925</p>
+        <p>@gmail.com</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  </body>
+
+<footer class="footer"><div style="text-align:left;margin-left:10px;">Designed by Avengers&copy</div><div><img src="../images/location.ico">Kampung Sungai Chinchin  <img src="../images/p.ico">019-665-0063 (Zulkifli-Secretary)</div></footer>
+
+</html>

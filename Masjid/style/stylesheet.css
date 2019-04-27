@@ -1,0 +1,164 @@
+@font-face {
+  font-family:Poppins-ExtraLight;
+  src:url("Poppins-ExtraLight.otf");
+}
+
+
+body {
+  font-family:Poppins ExtraLight, sans-serif;
+  transition: background-color .5s;
+  background-color:#232323;
+  margin:-8px;
+
+}
+
+.green
+{
+  color:#3ECCB5;
+}
+
+.topnav span
+{
+  color:white;
+  font-size:45px;
+  position:relative;
+  top: 20px;
+  left:35%;
+}
+
+ span.tarbiyyah
+{
+  color:#3ECCB5;
+  left:36%;
+}
+
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color:rgb(50,51,53);
+  height:120px;
+}
+
+.topnav img
+{
+width:75px;
+position: absolute;
+top:15px;
+left:23%;
+}
+
+
+.footer
+{
+  overflow: hidden;
+  background-color:rgb(50,51,53);
+  height:100px;
+  position:fixed;
+  width:100%;
+  bottom:0;
+  left:0;
+  color:#3eccb5;
+}
+
+
+
+.footer div
+{
+  text-align: center;
+  margin-top: 15px;
+}
+
+.footer img
+{
+  width:30px;
+  margin-left:30px;
+  margin-right:10px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display:none;
+    text-align: left;
+  }
+}
+
+
+.sidenav {
+  height: 100%;
+  width:300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:rgb(50,51,53);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  margin-top: 22px;
+  text-decoration: none;
+  font-size: 25px;
+  color:white;
+  background-color:rgb(50,51,53);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color:#3ECCB5;
+  border-right: 3px solid #3eccb5;
+}
+
+.sidenav a.active
+{
+  color:#3ECCB5;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color:white;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 10px;
+  position: sticky;
+}
+#main img
+{
+  width:60px;
+  position:fixed;
+  margin-top:10%;
+  z-index:2;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
